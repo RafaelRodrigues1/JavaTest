@@ -1,3 +1,22 @@
+
+
+# Configuração
+
+* Banco de dados do perfil de teste: http://localhost:8080/h2-console
+  * Url: jdbc:h2:mem:testdb
+  * Username: sa
+* Banco de dados do perfil de produção
+  * Alterar o arquivo application.properties
+    * spring.profiles.active=prod
+  * Alterar o arquivo application-prod.properties com os dados do seu banco
+    * spring.datasource.url=jdbc:mysql://localhost:3306/${DATABASE}
+    * spring.datasource.username=${USERNAME}
+    * spring.datasource.password=${PASSWORD}
+
+# Documentação
+
+* Link:  http://localhost:8080/swagger-ui/index.html
+
 # Teste de seleção para vaga de Java
 
 ## Faça um fork desse projeto e siga as instruções a seguir utilizando esse projeto.
