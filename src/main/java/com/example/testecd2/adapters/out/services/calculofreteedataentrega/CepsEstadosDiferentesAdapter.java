@@ -7,7 +7,7 @@ import com.example.testecd2.core.usecases.interfaces.CalculoPort;
 public class CepsEstadosDiferentesAdapter implements CalculoPort {
 
 	@Override
-	public double calculaFrete(double peso) {
+	public double calculaFrete(Double peso) {
 		return peso * (1 - calculaDesconto());
 	}
 

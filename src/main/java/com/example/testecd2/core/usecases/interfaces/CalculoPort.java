@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public interface CalculoPort {
 
-    double calculaFrete(double peso);
+    double calculaFrete(Double peso);
     double calculaDesconto();
     LocalDate calculaDataEntrega();
 }
